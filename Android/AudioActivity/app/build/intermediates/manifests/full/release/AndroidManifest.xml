@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015, Markus Brandt
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~ and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~ conditions and the following disclaimer in the documentation and/or other materials provided
+  ~ with the distribution.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS
+  ~ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+  ~ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+  ~ IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.tudarmstadt.seemoo.mbr.audioactivity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMain" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="de.tudarmstadt.seemoo.mbr.audioactivity.info.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:parentActivityName="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.tudarmstadt.seemoo.mbr.audioactivity.audiotest.AudioTestActivity"
+            android:label="@string/title_activity_audiotest"
+            android:parentActivityName="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.tudarmstadt.seemoo.mbr.audioactivity.send.SendActivity"
+            android:label="@string/title_activity_send"
+            android:parentActivityName="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.tudarmstadt.seemoo.mbr.audioactivity.test.TestActivity"
+            android:label="@string/title_activity_test"
+            android:parentActivityName="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.tudarmstadt.seemoo.mbr.audioactivity.test.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:parentActivityName="de.tudarmstadt.seemoo.mbr.audioactivity.test.TestActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.seemoo.mbr.audioactivity.test.TestActivity" />
+        </activity>
+        <activity
+            android:name="de.tudarmstadt.seemoo.mbr.audioactivity.about.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.seemoo.mbr.audioactivity.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.tudarmstadt.seemoo.mbr.audioactivity.send.SendSettingsActivity"
+            android:label="@string/title_activity_send_settings"
+            android:parentActivityName="de.tudarmstadt.seemoo.mbr.audioactivity.send.SendActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.tudarmstadt.seemoo.mbr.audioactivity.send.SendActivity" />
+        </activity>
+    </application>
+
+</manifest>

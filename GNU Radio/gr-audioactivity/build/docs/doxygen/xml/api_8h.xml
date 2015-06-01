@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="api_8h" kind="file" language="C++">
+    <compoundname>api.h</compoundname>
+    <includes local="no">gnuradio/attributes.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>api.h</label>
+        <link refid="api.h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gnuradio/attributes.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="api_8h_1a24a7b2d546895585cba6507458962725" prot="public" static="no">
+        <name>AUDIOACTIVITY_API</name>
+        <initializer>__GR_ATTR_IMPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/markus/Campus/TUD/2014WS/Thesis/gr/gr-audioactivity/include/audioactivity/api.h" line="30" column="12" bodyfile="/Users/markus/Campus/TUD/2014WS/Thesis/gr/gr-audioactivity/include/audioactivity/api.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/markus/Campus/TUD/2014WS/Thesis/gr/gr-audioactivity/include/audioactivity/api.h"/>
+  </compounddef>
+</doxygen>

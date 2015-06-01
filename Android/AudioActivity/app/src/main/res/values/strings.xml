@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015, Markus Brandt
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~ and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~ conditions and the following disclaimer in the documentation and/or other materials provided
+  ~ with the distribution.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS
+  ~ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+  ~ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+  ~ IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<resources>
+    <string name="app_name">Audio Activity</string>
+    <string name="action_show_frequencies">Show frequencies</string>
+    <string name="title_activity_info">Hardware information</string>
+    <string name="not_yet_implemented">This feature is not yet implemented.</string>
+    <string name="title_activity_audiotest">Audio test</string>
+    <string name="select_frequency">Select frequency</string>
+    <string name="title_activity_send">Send</string>
+    <string name="title_activity_test">Hearing Test</string>
+    <string name="test_description">Click the play button to start the test.\n\nWhen the test is running, click \'yes\' if you hear a tone and \'no\' if you don\'t.\nIf unsure, click \'no\'.</string>
+    <string name="title_activity_result">Hearing Test Result</string>
+    <string name="title_activity_about">About</string>
+    <string name="desc_seemoo_logo">SEEMOO logo</string>
+    <string name="desc_background_image">Background image</string>
+    <string name="text_modulation">Modulation</string>
+    <string name="text_template">Template</string>
+    <string name="text_message">Message</string>
+    <string name="hint_enter_message">Enter message to send or select a message from the template dropdown.</string>
+    <string name="text_no">No</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_hear_tone">Can you hear the tone?</string>
+    <string name="action_no_dim">Disable display dimming</string>
+    <string name="title_activity_send_settings">Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_symbol_size">Symbol size</string>
+    <string name="text_center_frequency">Center frequencies</string>
+    <string name="text_deviation">Deviation</string>
+    <string name="text_packet_type">Packet type</string>
+    <string name="text_chip_size">Chip size</string>
+    <string name="text_sine">Sine</string>
+    <string name="text_random_sine">Random sine</string>
+    <string name="text_random_sine_us">Random sine (ultrasonic)</string>
+    <string name="text_white_noise">White noise</string>
+    <string name="text_pink_noise">Pink noise</string>
+    <string name="text_dirac">Dirac</string>
+    <string name="text_digital_silence">Digital silence</string>
+    <string name="text_sending">Sending…</string>
+    <string name="text_amplitude_with_range">Amplitude (1–10000)</string>
+    <string name="text_interleave_none">None</string>
+    <string name="text_interleave_interleave">Interleave</string>
+    <string name="text_interleave_scramble">Scramble</string>
+    <string name="text_interleaving">Interleaving</string>
+    <string name="text_repeat">Repeat</string>
+    <string name="text_hw_model">Model</string>
+    <string name="text_hw_manufacturer">Manufacturer</string>
+    <string name="text_hw_product_name">Product</string>
+    <string name="text_hw_max_input_sample_rate">Max. input sample rate</string>
+    <string name="text_hw_max_output_sample_rate">Max. output sample rate</string>
+    <string name="select_amplitude">Select amplitude</string>
+</resources>

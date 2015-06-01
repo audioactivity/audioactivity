@@ -1,0 +1,4 @@
+/Users/markus/Campus/TUD/2014WS/Thesis/gr/gr-audioactivity/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/Users/markus/Campus/TUD/2014WS/Thesis/gr/gr-audioactivity/build/CMakeFiles/uninstall.dir
+/Users/markus/Campus/TUD/2014WS/Thesis/gr/gr-audioactivity/build/python/CMakeFiles/pygen_python_d6d0e.dir
+/Users/markus/Campus/TUD/2014WS/Thesis/gr/gr-audioactivity/build/docs/doxygen/CMakeFiles/doxygen_target.dir

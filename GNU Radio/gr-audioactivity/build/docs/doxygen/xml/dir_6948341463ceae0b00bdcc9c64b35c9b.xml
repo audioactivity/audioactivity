@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dir_6948341463ceae0b00bdcc9c64b35c9b" kind="dir">
+    <compoundname>audioactivity</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/markus/Campus/TUD/2014WS/Thesis/gr/gr-audioactivity/include/audioactivity/"/>
+  </compounddef>
+</doxygen>

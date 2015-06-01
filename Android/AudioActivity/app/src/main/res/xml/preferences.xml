@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015, Markus Brandt
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification, are permitted
+  ~ provided that the following conditions are met:
+  ~
+  ~ 1. Redistributions of source code must retain the above copyright notice, this list of conditions
+  ~ and the following disclaimer.
+  ~
+  ~ 2. Redistributions in binary form must reproduce the above copyright notice, this list of
+  ~ conditions and the following disclaimer in the documentation and/or other materials provided
+  ~ with the distribution.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS
+  ~ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+  ~ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  ~ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+  ~ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  ~ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+  ~ IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Frequency Shift Keying"
+        android:key="pref_fsk">
+        <ListPreference
+            android:key="pref_fsk_symbolsize"
+            android:title="@string/text_symbol_size"
+            android:defaultValue="1024"
+            android:entries="@array/symbolsizes"
+            android:entryValues="@array/symbolsizes" />
+        <EditTextPreference
+            android:key="pref_fsk_centerfreq"
+            android:title="@string/text_center_frequency"
+            android:defaultValue="18500"
+            android:inputType="number" />
+        <EditTextPreference
+            android:key="pref_fsk_dev"
+            android:title="@string/text_deviation"
+            android:defaultValue="500"
+            android:inputType="number" />
+        <ListPreference
+            android:key="pref_fsk_packet"
+            android:title="@string/text_packet_type"
+            android:defaultValue="gnuradio"
+            android:entries="@array/packettypes"
+            android:entryValues="@array/packettypessimple" />
+        <EditTextPreference
+            android:key="pref_fsk_repeat"
+            android:title="@string/text_repeat"
+            android:defaultValue="1"
+            android:inputType="number" />
+        <ListPreference
+            android:key="pref_fsk_interleave"
+            android:title="@string/text_interleaving"
+            android:defaultValue="NONE"
+            android:entries="@array/interleave_names"
+            android:entryValues="@array/interleave_values" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Gaussian Frequency Shift Keying"
+        android:key="pref_gfsk">
+        <ListPreference
+            android:key="pref_gfsk_symbolsize"
+            android:title="@string/text_symbol_size"
+            android:defaultValue="1024"
+            android:entries="@array/symbolsizes"
+            android:entryValues="@array/symbolsizes" />
+        <EditTextPreference
+            android:key="pref_gfsk_centerfreq"
+            android:title="@string/text_center_frequency"
+            android:defaultValue="18500"
+            android:inputType="number" />
+        <EditTextPreference
+            android:key="pref_gfsk_dev"
+            android:title="@string/text_deviation"
+            android:defaultValue="10"
+            android:inputType="number" />
+        <ListPreference
+            android:key="pref_gfsk_packet"
+            android:title="@string/text_packet_type"
+            android:defaultValue="gnuradio"
+            android:entries="@array/packettypes"
+            android:entryValues="@array/packettypessimple" />
+        <EditTextPreference
+            android:key="pref_gfsk_repeat"
+            android:title="@string/text_repeat"
+            android:defaultValue="1"
+            android:inputType="number" />
+        <ListPreference
+            android:key="pref_gfsk_interleave"
+            android:title="@string/text_interleaving"
+            android:defaultValue="NONE"
+            android:entries="@array/interleave_names"
+            android:entryValues="@array/interleave_values" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Phase Shift Keying"
+        android:key="pref_psk">
+        <ListPreference
+            android:key="pref_psk_symbolsize"
+            android:title="@string/text_symbol_size"
+            android:defaultValue="1024"
+            android:entries="@array/symbolsizes"
+            android:entryValues="@array/symbolsizes" />
+        <EditTextPreference
+            android:key="pref_psk_centerfreq"
+            android:title="@string/text_center_frequency"
+            android:defaultValue="18500"
+            android:inputType="number" />
+        <ListPreference
+            android:key="pref_psk_packet"
+            android:title="@string/text_packet_type"
+            android:defaultValue="gnuradio"
+            android:entries="@array/packettypes"
+            android:entryValues="@array/packettypessimple" />
+        <EditTextPreference
+            android:key="pref_psk_repeat"
+            android:title="@string/text_repeat"
+            android:defaultValue="1"
+            android:inputType="number" />
+        <ListPreference
+            android:key="pref_psk_interleave"
+            android:title="@string/text_interleaving"
+            android:defaultValue="NONE"
+            android:entries="@array/interleave_names"
+            android:entryValues="@array/interleave_values" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="PSK31"
+        android:key="pref_psk31">
+        <EditTextPreference
+            android:key="pref_psk31_centerfreq"
+            android:title="@string/text_center_frequency"
+            android:defaultValue="18000"
+            android:inputType="number" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Direct Sequence Spread Spectrum"
+        android:key="pref_dsss">
+        <ListPreference
+            android:key="pref_dsss_chipsize"
+            android:title="@string/text_chip_size"
+            android:defaultValue="1024"
+            android:entries="@array/symbolsizes"
+            android:entryValues="@array/symbolsizes" />
+        <EditTextPreference
+            android:key="pref_dsss_amplitude"
+            android:title="@string/text_amplitude_with_range"
+            android:defaultValue="250"
+            android:inputType="number" />
+    </PreferenceCategory>
+</PreferenceScreen>

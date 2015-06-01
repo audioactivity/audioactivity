@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context="de.tudarmstadt.seemoo.mbr.audioactivity.test.TestActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_no"
+        android:id="@+id/noButton"
+        android:enabled="false"
+        android:clickable="true"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_yes"
+        android:id="@+id/yesButton"
+        android:enabled="false"
+        android:clickable="true"
+        android:layout_alignTop="@+id/noButton"
+        android:layout_alignParentEnd="true" />
+
+    <de.tudarmstadt.seemoo.mbr.audioactivity.misc.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playButton"
+        android:stateListAnimator="@anim/fab_anim"
+        android:src="@drawable/ic_play_arrow_white_48dp"
+        android:background="@drawable/ripple_primary"
+        android:padding="4dp"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/test_description"
+        android:id="@+id/descTextView"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:singleLine="false"
+        android:nestedScrollingEnabled="false"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/hearTextView" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_hear_tone"
+        android:enabled="false"
+        android:id="@+id/hearTextView"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:progress="0"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hearTextView"
+        android:layout_alignEnd="@+id/descTextView"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/frequencyTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/descTextView"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+</RelativeLayout>
+<!-- From: file:/Users/markus/AndroidStudioProjects/AudioActivity/app/src/main/res/layout/activity_test.xml -->

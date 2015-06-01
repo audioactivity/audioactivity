@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<block>
+  <name>Custom Packet Decoder</name>
+  <key>audioactivity_packet_decoder</key>
+  <category>Audioactivity</category>
+  <import>import audioactivity</import>
+  <make>audioactivity.packet_demod_$(type.fcn)(audioactivity.packet_decoder(
+    access_code=$access_code,
+    threshold=$threshold,
+    repeat=$repeat,
+    interleave=$interleave,
+    debug=$debug,
+    callback=lambda ok, payload: self.$(id).recv_pkt(ok, payload),
+    ),
+    debug=$debug,
+    compare=$compare,
+)</make>
+  <param>
+    <name>Output Type</name>
+    <key>type</key>
+    <value>float</value>
+    <type>enum</type>
+    <option>
+      <name>Complex</name>
+      <key>complex</key>
+      <opt>fcn:c</opt>
+    </option>
+    <option>
+      <name>Float</name>
+      <key>float</key>
+      <opt>fcn:f</opt>
+    </option>
+    <option>
+      <name>Int</name>
+      <key>int</key>
+      <opt>fcn:i</opt>
+    </option>
+    <option>
+      <name>Short</name>
+      <key>short</key>
+      <opt>fcn:s</opt>
+    </option>
+    <option>
+      <name>Byte</name>
+      <key>byte</key>
+      <opt>fcn:b</opt>
+    </option>
+  </param>
+  <param>
+    <name>Access Code</name>
+    <key>access_code</key>
+    <value></value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <value>-1</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Compare</name>
+    <key>compare</key>
+    <value></value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Repeat</name>
+    <key>repeat</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Interleave type</name>
+    <key>interleave</key>
+    <type>enum</type>
+    <option>
+      <name>None</name>
+      <key>None</key>
+    </option>
+    <option>
+      <name>Interleave</name>
+      <key>1</key>
+    </option>
+    <option>
+      <name>Scramble</name>
+      <key>2</key>
+    </option>
+  </param>
+  <param>
+    <name>Debug</name>
+    <key>debug</key>
+    <type>enum</type>
+    <option>
+      <name>No</name>
+      <key>False</key>
+    </option>
+    <option>
+      <name>Yes</name>
+      <key>True</key>
+    </option>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>$type</type>
+  </source>
+</block>

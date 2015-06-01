@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/markus/AndroidStudioProjects/AudioActivity/app/src/main/res/values-de/strings.xml -->
+    <eat-comment/>
+    <string name="action_no_dim">Bildschirm nicht dimmen</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_show_frequencies">Frequenzen anzeigen</string>
+    <string name="app_name">Audio Activity</string>
+    <string name="desc_background_image">Hintergrundbild</string>
+    <string name="desc_seemoo_logo">SEEMOO Logo</string>
+    <string name="hint_enter_message">Geben Sie eine Nachricht zum Senden ein oder wählen Sie eine Vorlage aus.</string>
+    <string name="not_yet_implemented">Diese Funktion ist noch nicht implementiert.</string>
+    <string name="select_amplitude">Amplitude auswählen</string>
+    <string name="select_frequency">Frequenz auswählen</string>
+    <string name="test_description">Drücken Sie auf das \'Play\' Symbol um den Test zu starten.\n\nWenn der Test läuft, drücken sie \'Ja\' wenn Sie einen Ton hören oder \'Nein\' wenn nicht.\nFalls Sie sich unsicher sind drücken Sie \'Nein\'.</string>
+    <string name="text_amplitude_with_range">Amplitude (1–10000)</string>
+    <string name="text_center_frequency">Mittenfrequenz</string>
+    <string name="text_chip_size">Chipsize</string>
+    <string name="text_deviation">Abweichung / Hub</string>
+    <string name="text_digital_silence">Digitale Stille</string>
+    <string name="text_dirac">Dirac</string>
+    <string name="text_hear_tone">Können Sie den Ton hören?</string>
+    <string name="text_hw_manufacturer">Hersteller</string>
+    <string name="text_hw_max_input_sample_rate">Max. Eingangssamplerate</string>
+    <string name="text_hw_max_output_sample_rate">Max. Ausgangssamplerate</string>
+    <string name="text_hw_model">Modell </string>
+    <string name="text_hw_product_name">Produkt</string>
+    <string name="text_interleave_interleave">Verschachteln</string>
+    <string name="text_interleave_none">Keins</string>
+    <string name="text_interleave_scramble">Verwürfeln</string>
+    <string name="text_interleaving">Verschachtelung</string>
+    <string name="text_message">Nachricht</string>
+    <string name="text_modulation">Modulation</string>
+    <string name="text_no">Nein</string>
+    <string name="text_packet_type">Pakettyp</string>
+    <string name="text_pink_noise">Rosa Rauschen</string>
+    <string name="text_random_sine">Zufälliger Sinus</string>
+    <string name="text_random_sine_us">Zufälliger Sinus (Ultraschall)</string>
+    <string name="text_repeat">Wiederholung</string>
+    <string name="text_sending">Sende…</string>
+    <string name="text_sine">Sinus</string>
+    <string name="text_symbol_size">Symbolgröße</string>
+    <string name="text_template">Vorlage</string>
+    <string name="text_white_noise">Weißes Rauschen</string>
+    <string name="text_yes">Ja</string>
+    <string name="title_activity_about">Über</string>
+    <string name="title_activity_audiotest">Audio Test</string>
+    <string name="title_activity_info">Hardware Informationen</string>
+    <string name="title_activity_result">Hörtest Ergebnisse</string>
+    <string name="title_activity_send">Senden</string>
+    <string name="title_activity_send_settings">Einstellungen</string>
+    <string name="title_activity_test">Hörtest</string>
+</resources>
